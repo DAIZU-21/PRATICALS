@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinearLayoutActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="30"
+            android:scaleType="fitXY"
+            android:src="@mipmap/download" />
+
+        <TextView
+            android:layout_width="313dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:fontFamily="@font/agbalumo"
+            android:padding="10dp"
+            android:text="  HELLO DAIZU"
+            android:textColor="@color/teal_200"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="219dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="CLICK ME"
+        android:layout_margin="5dp"
+        android:layout_weight="60" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:textSize="25dp"
+        android:text="CLICK ME 1"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"/>
+
+    </LinearLayout>
+
+</LinearLayout>
